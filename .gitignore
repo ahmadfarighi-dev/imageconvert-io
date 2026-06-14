@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+/.next/
+/out/
+/build
+next-env.d.ts
+
+# Production
+/dist
+
+# Environment / secrets (DataForSEO key, etc. — never commit)
+.env
+.env*.local
+.env.local
+
+# Vercel
+.vercel
+
+# Testing
+/coverage
+/playwright-report
+/test-results
+
+# Research pipeline outputs (regenerated, may be large)
+/research/*.csv
+/research/__pycache__/
+*.py[cod]
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
