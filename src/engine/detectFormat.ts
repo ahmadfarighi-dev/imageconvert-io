@@ -3,7 +3,7 @@ import type { InputFormat } from './types';
 /** Detect image format by inspecting magic bytes. Reads only the header. */
 export function detectFormat(buffer: ArrayBuffer): InputFormat {
   const b = new Uint8Array(buffer);
-  if (b.length < 3) return 'unknown';
+  if (b.length < 4) return 'unknown';
 
   // PNG: 89 50 4E 47 0D 0A 1A 0A
   if (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) return 'png';
