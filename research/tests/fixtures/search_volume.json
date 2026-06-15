@@ -1,0 +1,12 @@
+{
+  "status_code": 20000,
+  "tasks": [
+    {
+      "result": [
+        {"keyword": "heic to jpg", "search_volume": 90500, "competition_index": 12, "cpc": 0.41},
+        {"keyword": "webp to png", "search_volume": 60500, "competition_index": 8, "cpc": 0.33},
+        {"keyword": "obscure term", "search_volume": null, "competition_index": null, "cpc": null}
+      ]
+    }
+  ]
+}

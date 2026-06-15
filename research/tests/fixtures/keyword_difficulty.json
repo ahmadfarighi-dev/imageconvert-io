@@ -1,0 +1,15 @@
+{
+  "status_code": 20000,
+  "tasks": [
+    {
+      "result": [
+        {
+          "items": [
+            {"keyword": "heic to jpg", "keyword_difficulty": 28},
+            {"keyword": "webp to png", "keyword_difficulty": 19}
+          ]
+        }
+      ]
+    }
+  ]
+}
