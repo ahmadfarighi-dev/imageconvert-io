@@ -22,21 +22,21 @@ def render_markdown(scored: list[ScoredKeyword], gate: GateResult) -> str:
         for r in gate.reasons:
             lines.append(f"- ⚠ {r}")
     lines.append("")
-    lines.append("> The `score` column is a SORT KEY, not a verdict. Verdicts use explicit thresholds "
-                 "(see `score.py`). `strongest_rank` is the toughest competitor's authority in the top 10. "
-                 "ALWAYS eyeball `top_domains` before committing to a page.\n")
-    lines.append("| keyword | verdict | volume | difficulty | beatable | indies | strongest_rank | score | top_domains |")
-    lines.append("|---|---|---|---|---|---|---|---|---|")
+    lines.append("> `score` is a SORT KEY, not a verdict. Verdicts use explicit volume + keyword-difficulty "
+                 "thresholds (see `score.py`). `difficulty` (KD, 0-100) is the beatability signal — it encodes "
+                 "the incumbents' authority. `top_domains` shows who currently ranks; ALWAYS eyeball it before "
+                 "committing to a page.\n")
+    lines.append("| keyword | verdict | volume | difficulty | beatable | score | top_domains |")
+    lines.append("|---|---|---|---|---|---|---|")
     for s in ordered:
         lines.append(
             f"| {s.keyword} | **{s.verdict}** | {s.search_volume:,} | "
             f"{s.keyword_difficulty if s.keyword_difficulty is not None else '—'} | "
-            f"{'yes' if s.beatable else 'no'} | {len(s.indie_domains)} | "
-            f"{s.strongest_rank_top10 if s.strongest_rank_top10 is not None else '—'} | {s.score} | "
+            f"{'yes' if s.beatable else 'no'} | {s.score} | "
             f"{', '.join(s.top_domains[:5])} |"
         )
     lines.append("\n## Human review checklist (do before committing page list)")
-    lines.append("- [ ] For each `build` keyword, open the real Google SERP and confirm the indie sites are genuinely beatable (clean UX gap, caps/watermarks, dated design).")
+    lines.append("- [ ] For each `build` keyword, open the real Google SERP and confirm the ranking sites look beatable (indie tools with clean-UX gaps, caps/watermarks, dated design — not wall-to-wall giants).")
     lines.append("- [ ] Confirm no AI Overview already answers the query in-place (function tools should be safe; verify).")
     lines.append("- [ ] Sanity-check 2–3 volumes against a second source (free Keyword Surfer / Google Trends direction).")
     lines.append("- [ ] Pick the final 8–12 pages from `build` (and strong `maybe`) keywords.")

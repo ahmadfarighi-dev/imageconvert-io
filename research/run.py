@@ -98,31 +98,22 @@ def cmd_pull(args):
             print(f"WARNING: SERP keyword echo '{serp.keyword}' != requested '{kw}'.")
         serps.append(serp)
 
-    domains = unique_domains(serps)
-    ranks = {}
-    for chunk in _chunks(domains, 900):
-        body = c.post("/v3/backlinks/bulk_ranks/live", [{"targets": chunk, "rank_scale": "one_hundred"}])
-        ranks.update(parse.parse_bulk_ranks(body))
-    if domains and not ranks:
-        print("WARNING: domain authority (bulk_ranks) returned nothing — every SERP will look "
-              "unbeatable. Inspect `probe` output before trusting results.")
-
+    # NOTE: beatability is driven by keyword_difficulty (accessible on the deposit). Per-domain
+    # backlink authority (bulk_ranks) needs a separate DataForSEO Backlinks subscription, so it is
+    # intentionally not pulled. The SERP domains are kept only to surface who ranks for human review.
     RESULTS_DIR.mkdir(exist_ok=True)
     serp_by_kw = {s.keyword: [o.domain for o in s.organic[:10]] for s in serps}
     PULL_FILE.write_text(json.dumps({
         "metrics": [m.__dict__ for m in metrics],
         "serp_domains": serp_by_kw,
-        "ranks": ranks,
     }, indent=2), encoding="utf-8")
-    print(f"Pulled volume/difficulty for {len(metrics)} kw, SERPs for {len(serps)}, "
-          f"authority for {len(ranks)} domains -> results/pull.json")
+    print(f"Pulled volume/difficulty for {len(metrics)} kw, SERPs for {len(serps)} -> {PULL_FILE.name}")
 
 
 def cmd_report(args):
     from models import KeywordMetrics, SerpResult, OrganicResult
     data = json.loads(PULL_FILE.read_text(encoding="utf-8"))
     metrics = [KeywordMetrics(**m) for m in data["metrics"]]
-    ranks = data["ranks"]
     serp_domains = data["serp_domains"]
 
     scored = []
@@ -131,7 +122,7 @@ def cmd_report(args):
         if not domains:
             continue
         serp = SerpResult(m.keyword, [OrganicResult(i + 1, d, "") for i, d in enumerate(domains)])
-        scored.append(score_mod.score_keyword(m, serp, ranks))
+        scored.append(score_mod.score_keyword(m, serp))
 
     gate = score_mod.evaluate_gate(scored)
     REPORT_FILE.write_text(report.render_markdown(scored, gate), encoding="utf-8")

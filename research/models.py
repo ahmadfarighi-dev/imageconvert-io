@@ -29,10 +29,8 @@ class ScoredKeyword:
     keyword: str
     search_volume: int
     keyword_difficulty: int | None
-    top_domains: list[str]
-    indie_domains: list[str]
-    strongest_rank_top10: int | None  # highest KNOWN authority in the top 10 (toughest competitor)
-    beatable: bool
+    top_domains: list[str]            # who currently ranks (from SERP) — surfaced for human review
+    beatable: bool                    # keyword_difficulty indicates a new domain can realistically rank
     score: float
     verdict: str  # "build" | "maybe" | "skip"
 

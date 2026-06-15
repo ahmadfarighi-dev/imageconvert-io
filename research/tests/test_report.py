@@ -5,9 +5,8 @@ from models import ScoredKeyword, GateResult
 
 def sample():
     return [
-        ScoredKeyword("heic to jpg", 90500, 28, ["cloudconvert.com", "freeconvert.com"],
-                      ["freeconvert.com"], 71, True, 9.1, "build"),
-        ScoredKeyword("pdf to word", 400000, 70, ["ilovepdf.com"], [], 83, False, 2.0, "skip"),
+        ScoredKeyword("heic to jpg", 90500, 28, ["cloudconvert.com", "freeconvert.com"], True, 9.1, "build"),
+        ScoredKeyword("pdf to word", 400000, 70, ["ilovepdf.com"], False, 2.0, "skip"),
     ]
 
 

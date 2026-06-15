@@ -1,60 +1,46 @@
 import math
 from models import KeywordMetrics, SerpResult, ScoredKeyword, GateResult
 
-# --- Tunable thresholds (documented in README + report). Judgment calls; a human may override. ---
-INDIE_RANK_MAX = 40            # domain authority (0-100) below which a ranking site is "beatable indie"
-INDIE_RANK_MIN = 1            # ranks below this (i.e. 0 = "no backlinks detected"/unknown to DataForSEO)
-                              # are NOT treated as authority-zero indies — missing data must never
-                              # manufacture beatability (the careful default).
-MIN_INDIE_FOR_BEATABLE = 2    # a SERP is beatable if >= this many indies sit within the TOP positions
-TOP_POSITIONS = 5            # only the visible top-5 count toward beatability — giants up top (1-8) with
-                             # indies stranded at 9-10 is NOT realistically winnable for a new domain.
-VOLUME_FLOOR_BUILD = 500      # min US monthly volume to consider "build"
-VOLUME_FLOOR_SERP = 200       # min volume to bother pulling a (paid) SERP
-DIFFICULTY_MAX_BUILD = 50     # difficulty at/above which we downgrade from "build"
+# --- Beatability is driven by keyword_difficulty (KD, 0-100) ---
+# DataForSEO computes KD from the current top-10's link profiles and ranking factors, so it
+# already encodes how authoritative the incumbents are — exactly what a brand-new domain needs
+# to know. We use KD (accessible on the pay-as-you-go deposit) rather than per-domain backlink
+# authority (DataForSEO Backlinks API = separate subscription). The raw ranking domains are still
+# surfaced in the report for human SERP review. Thresholds are judgment calls; a human may override.
+KD_MAX_BUILD = 40        # KD <= this: realistically winnable for a brand-new domain
+KD_MAX_BEATABLE = 55     # KD above this: giant-dominated SERP, not winnable for a new site
+VOLUME_FLOOR_BUILD = 500 # min US monthly volume to consider "build"
+VOLUME_FLOOR_SERP = 200  # min volume to bother pulling a (paid) SERP
 GATE_MIN_BUILD_KEYWORDS = 8
 GATE_MIN_TOTAL_VOLUME = 100_000
 
 
-def classify_beatable(serp: SerpResult, ranks: dict[str, int]) -> tuple[bool, list[str]]:
-    """A SERP is beatable if >= MIN_INDIE_FOR_BEATABLE of its TOP-`TOP_POSITIONS` organic domains
-    have authority in [INDIE_RANK_MIN, INDIE_RANK_MAX). Two careful defaults guard against
-    manufacturing beatability from bad data:
-      - UNKNOWN authority (domain absent from `ranks`) is NOT counted as indie.
-      - rank 0 ("no backlinks detected" / unknown to DataForSEO) is NOT counted as indie.
-    Counting only the top positions prevents giant-dominated SERPs (giants 1-8, indies 9-10)
-    from being mislabeled winnable for a brand-new domain."""
-    indies = []
-    for o in serp.organic[:TOP_POSITIONS]:
-        rank = ranks.get(o.domain)
-        if rank is not None and INDIE_RANK_MIN <= rank < INDIE_RANK_MAX:
-            indies.append(o.domain)
-    return (len(indies) >= MIN_INDIE_FOR_BEATABLE, indies)
+def is_beatable(difficulty: int | None) -> bool:
+    """A SERP is realistically winnable for a new domain when keyword difficulty is not in giant
+    territory. UNKNOWN difficulty is conservatively treated as NOT beatable (careful default:
+    never assume winnable on missing data)."""
+    return difficulty is not None and difficulty <= KD_MAX_BEATABLE
 
 
-def _score_value(search_volume: int, difficulty: int | None, indie_count: int) -> float:
-    """Transparent SORT key (NOT a verdict): rewards volume, beatable indies, and low difficulty."""
-    volume_score = math.log10(search_volume + 1)         # ~0..6
-    ease = max(0.05, 1 - (difficulty if difficulty is not None else 50) / 100)
-    return round(volume_score * (indie_count + 1) * ease, 3)
+def _score_value(search_volume: int, difficulty: int | None) -> float:
+    """Transparent SORT key (NOT a verdict): rewards volume and low difficulty."""
+    volume_score = math.log10(search_volume + 1)                       # ~0..6
+    ease = max(0.05, 1 - (difficulty if difficulty is not None else 60) / 100)
+    return round(volume_score * ease, 3)
 
 
-def score_keyword(metrics: KeywordMetrics, serp: SerpResult, ranks: dict[str, int]) -> ScoredKeyword:
-    beatable, indies = classify_beatable(serp, ranks)
-    top_domains = [o.domain for o in serp.organic[:10]]
-    # Strongest competitor = highest KNOWN authority in the top 10 (rank 0 = unknown, excluded).
-    known_ranks = [ranks[d] for d in top_domains if d in ranks and ranks[d] >= INDIE_RANK_MIN]
-    strongest_rank = max(known_ranks) if known_ranks else None
+def score_keyword(metrics: KeywordMetrics, serp: SerpResult) -> ScoredKeyword:
     volume = metrics.search_volume or 0
     diff = metrics.keyword_difficulty
+    top_domains = [o.domain for o in serp.organic[:10]]
+    beatable = is_beatable(diff)
 
     if not beatable or volume < VOLUME_FLOOR_BUILD:
         verdict = "skip"
-    elif diff is None or diff >= DIFFICULTY_MAX_BUILD:
-        # Unknown difficulty is conservative -> "maybe", never an automatic "build".
-        verdict = "maybe"
-    else:
+    elif diff is not None and diff <= KD_MAX_BUILD:
         verdict = "build"
+    else:
+        verdict = "maybe"
 
     # A beatable, mid-volume term that just misses the build floor is "maybe", not "skip".
     if verdict == "skip" and beatable and VOLUME_FLOOR_SERP <= volume < VOLUME_FLOOR_BUILD:
@@ -65,10 +51,8 @@ def score_keyword(metrics: KeywordMetrics, serp: SerpResult, ranks: dict[str, in
         search_volume=volume,
         keyword_difficulty=diff,
         top_domains=top_domains,
-        indie_domains=indies,
-        strongest_rank_top10=strongest_rank,
         beatable=beatable,
-        score=_score_value(volume, diff, len(indies)),
+        score=_score_value(volume, diff),
         verdict=verdict,
     )
 
