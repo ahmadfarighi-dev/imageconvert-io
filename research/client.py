@@ -8,7 +8,7 @@ import requests
 from dotenv import load_dotenv
 
 API_BASE = "https://api.dataforseo.com"
-CACHE_DIR = Path("cache")
+CACHE_DIR = Path(__file__).resolve().parent / "cache"
 
 
 def build_auth_header(login: str, password: str) -> str:

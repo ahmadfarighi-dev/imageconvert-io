@@ -45,6 +45,7 @@ def parse_serp(body: dict) -> SerpResult:
                 domain=item["domain"].lower(),
                 url=item.get("url", ""),
             ))
+    organic.sort(key=lambda o: o.rank)
     return SerpResult(keyword=res.get("keyword", "").lower().strip(), organic=organic)
 
 

@@ -24,3 +24,15 @@ def test_parse_serp_empty_is_safe():
     s = parse.parse_serp({"tasks": []})
     assert s.keyword == ""
     assert s.organic == []
+
+
+def test_parse_serp_sorts_organic_by_rank_even_when_api_unordered():
+    body = {
+        "tasks": [{"result": [{"keyword": "k", "items": [
+            {"type": "organic", "rank_group": 3, "domain": "c.com", "url": ""},
+            {"type": "organic", "rank_group": 1, "domain": "a.com", "url": ""},
+            {"type": "organic", "rank_group": 2, "domain": "b.com", "url": ""},
+        ]}]}]
+    }
+    serp = parse.parse_serp(body)
+    assert [o.domain for o in serp.organic] == ["a.com", "b.com", "c.com"]

@@ -11,8 +11,13 @@ import report
 
 US = 2840
 LANG = "en"
-RESULTS_DIR = Path("results")
-CANDIDATES_FILE = Path("results/candidates.json")
+BASE = Path(__file__).resolve().parent
+SEEDS_FILE = BASE / "data" / "seeds.json"
+RESULTS_DIR = BASE / "results"
+CANDIDATES_FILE = RESULTS_DIR / "candidates.json"
+PULL_FILE = RESULTS_DIR / "pull.json"
+DECISION_FILE = RESULTS_DIR / "decision-data.json"
+REPORT_FILE = BASE / "keyword-research.md"
 
 
 def select_serp_candidates(metrics, max_serps: int) -> list[str]:
@@ -36,7 +41,7 @@ def _chunks(items, n):
 
 
 def cmd_discover(args):
-    seeds = load_seeds("data/seeds.json")
+    seeds = load_seeds(str(SEEDS_FILE))
     candidates = expand_seeds(seeds)
     RESULTS_DIR.mkdir(exist_ok=True)
     CANDIDATES_FILE.write_text(json.dumps(candidates, indent=2), encoding="utf-8")
@@ -49,13 +54,13 @@ def cmd_probe(args):
     kw = "heic to jpg"
     base = {"location_code": US, "language_code": LANG}
     print("search_volume:", json.dumps(c.post("/v3/keywords_data/google_ads/search_volume/live",
-          [{**base, "keywords": [kw]}]))[:400])
+          [{**base, "keywords": [kw]}]))[:2500])
     print("difficulty:", json.dumps(c.post("/v3/dataforseo_labs/google/bulk_keyword_difficulty/live",
-          [{**base, "keywords": [kw]}]))[:400])
+          [{**base, "keywords": [kw]}]))[:2500])
     print("serp:", json.dumps(c.post("/v3/serp/google/organic/live/advanced",
-          [{**base, "keyword": kw, "depth": 10}]))[:400])
+          [{**base, "keyword": kw, "depth": 10}]))[:2500])
     print("ranks:", json.dumps(c.post("/v3/backlinks/bulk_ranks/live",
-          [{"targets": ["cloudconvert.com"], "rank_scale": "one_hundred"}]))[:400])
+          [{"targets": ["cloudconvert.com"], "rank_scale": "one_hundred"}]))[:2500])
     print("\nIf any shape differs from the fixtures, update parse.py + fixtures BEFORE running `pull`.")
 
 
@@ -68,10 +73,16 @@ def cmd_pull(args):
     for chunk in _chunks(candidates, 700):
         body = c.post("/v3/keywords_data/google_ads/search_volume/live", [{**base, "keywords": chunk}])
         metrics.extend(parse.parse_search_volume(body))
+    if metrics and all(m.search_volume is None for m in metrics):
+        print("WARNING: every keyword came back with search_volume=None — the search_volume "
+              "response shape may not match the parser. Inspect `probe` output before trusting results.")
     difficulty = {}
     for chunk in _chunks(candidates, 700):
         body = c.post("/v3/dataforseo_labs/google/bulk_keyword_difficulty/live", [{**base, "keywords": chunk}])
         difficulty.update(parse.parse_keyword_difficulty(body))
+    if candidates and not difficulty:
+        print("WARNING: keyword_difficulty parse returned nothing — the difficulty response shape "
+              "may not match the parser. All verdicts will be capped at 'maybe'.")
     for m in metrics:
         m.keyword_difficulty = difficulty.get(m.keyword)
 
@@ -79,17 +90,26 @@ def cmd_pull(args):
     serps = []
     for kw in serp_keywords:
         body = c.post("/v3/serp/google/organic/live/advanced", [{**base, "keyword": kw, "depth": 10}])
-        serps.append(parse.parse_serp(body))
+        serp = parse.parse_serp(body)
+        if not serp.keyword or not serp.organic:
+            print(f"WARNING: empty/invalid SERP for '{kw}' — skipping (possible quota limit or shape mismatch).")
+            continue
+        if serp.keyword != kw.lower().strip():
+            print(f"WARNING: SERP keyword echo '{serp.keyword}' != requested '{kw}'.")
+        serps.append(serp)
 
     domains = unique_domains(serps)
     ranks = {}
     for chunk in _chunks(domains, 900):
         body = c.post("/v3/backlinks/bulk_ranks/live", [{"targets": chunk, "rank_scale": "one_hundred"}])
         ranks.update(parse.parse_bulk_ranks(body))
+    if domains and not ranks:
+        print("WARNING: domain authority (bulk_ranks) returned nothing — every SERP will look "
+              "unbeatable. Inspect `probe` output before trusting results.")
 
     RESULTS_DIR.mkdir(exist_ok=True)
     serp_by_kw = {s.keyword: [o.domain for o in s.organic[:10]] for s in serps}
-    Path("results/pull.json").write_text(json.dumps({
+    PULL_FILE.write_text(json.dumps({
         "metrics": [m.__dict__ for m in metrics],
         "serp_domains": serp_by_kw,
         "ranks": ranks,
@@ -100,7 +120,7 @@ def cmd_pull(args):
 
 def cmd_report(args):
     from models import KeywordMetrics, SerpResult, OrganicResult
-    data = json.loads(Path("results/pull.json").read_text(encoding="utf-8"))
+    data = json.loads(PULL_FILE.read_text(encoding="utf-8"))
     metrics = [KeywordMetrics(**m) for m in data["metrics"]]
     ranks = data["ranks"]
     serp_domains = data["serp_domains"]
@@ -114,8 +134,8 @@ def cmd_report(args):
         scored.append(score_mod.score_keyword(m, serp, ranks))
 
     gate = score_mod.evaluate_gate(scored)
-    Path("keyword-research.md").write_text(report.render_markdown(scored, gate), encoding="utf-8")
-    Path("results/decision-data.json").write_text(
+    REPORT_FILE.write_text(report.render_markdown(scored, gate), encoding="utf-8")
+    DECISION_FILE.write_text(
         json.dumps(report.to_json_dict(scored, gate), indent=2), encoding="utf-8")
     print(f"Report written. Gate: {'PASS' if gate.passed else 'FAIL'} "
           f"({gate.build_keyword_count} build kw, {gate.total_build_volume:,} volume)")

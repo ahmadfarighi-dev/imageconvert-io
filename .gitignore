@@ -56,3 +56,4 @@ next-env.d.ts
 /research/cache/
 /research/.venv/
 research/.env
+/research/results/pull.json
