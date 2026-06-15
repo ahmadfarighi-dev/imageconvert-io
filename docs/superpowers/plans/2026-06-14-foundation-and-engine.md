@@ -893,4 +893,24 @@ git commit -m "ci: run typecheck, lint, unit, and e2e on every push"
 - **Spec coverage:** Engine (compress/convert/resize) ✓ Task 8; hybrid Canvas + lazy WASM ✓ Tasks 6–7; HEIC/AVIF ✓ Tasks 6,7,9; "compress to X kb" target-byte mode ✓ Task 5; SSG scaffold + CI ✓ Tasks 0,10; TDD on pure logic ✓ Tasks 3–5; testing strategy ✓ Tasks 3–5,9. UI/Dropzone/ZIP/Web Worker and the data-driven page system are intentionally **deferred to Plan 2**. Keyword research pipeline is **Plan 3**.
 - **Type consistency:** `convertImage`, `detectFormat`, `decodeToBitmap`, `encodeBitmap`, `calcDimensions`, `searchQuality`, and the `OutputFormat`/`ConvertOptions`/`ConvertResult` types are used identically across tasks.
 - **Known runtime risk to watch during execution:** Next.js + WASM bundling occasionally needs tweaks beyond `next.config.mjs` (e.g. serving `.wasm` from the lazy chunk). Task 9 is the canary — if AVIF/HEIC tests fail to load WASM, adjust `next.config.mjs` (asset/resource path or `optimizeDeps`-style exclude) before moving on. This is expected integration work, not a design flaw.
+
+---
+
+## Execution outcome (2026-06-14) — DONE, merged to main
+
+All 11 tasks executed via subagent-driven development; final whole-branch review passed (no critical issues). 15 unit + 6 e2e tests green; build compiles. Merged to `main`.
+
+**Deviations from the plan's literal code (corrected during execution):**
+- `detectFormat`: the `b.length < 12` guard was reordered (a `< 4` pre-check before PNG/JPEG, `< 12` before WebP/ISO-BMFF) — the original ordering wrongly returned `unknown` for the 8-byte PNG/JPEG test buffers.
+- `searchQuality` convergence test: bound corrected from `<= 9` to `<= 10` (the algorithm probes both q=1 and q=0 before 8 bisections).
+- `decode.ts`: added a null guard — `@jsquash/avif`'s `decode` returns `ImageData | null`.
+- `engine-harness/page.tsx`: added `notFound()` under a `NODE_ENV === 'production'` guard so the dev harness can't expose the engine on `window` in prod.
+
+**Non-blocking follow-ups for Plan 2 (from final review):**
+- `convertImage` target-bytes mode runs one extra full encode after the search (re-encodes at the winning quality instead of reusing the search's blob). Optimize by having the probe cache/return the winning blob.
+- `detectFormat` ISO-BMFF brand list omits `msf1`/`hevc`/`hevx`; fine for now (routing only — `heic-to` does the real decode), but extend if a HEIC variant slips through.
+- Add unit tests for `detectFormat` truncated/unknown-brand cases and `calcDimensions` with `resize: {}`.
+- The Web Worker is a Plan 2 deliverable — conversions currently run on the main thread (large images will jank the UI until then).
+- HEIC fixture is ~700 KB (committed binary); swap for a smaller sample if repo size matters.
+- README is still the create-next-app default — update via document-release after a user-facing build exists.
 ```
