@@ -1016,14 +1016,14 @@ def render_markdown(scored: list[ScoredKeyword], gate: GateResult) -> str:
     lines.append("")
     lines.append("> The `score` column is a SORT KEY, not a verdict. Verdicts use explicit thresholds "
                  "(see `score.py`). ALWAYS eyeball `top_domains` before committing to a page.\n")
-    lines.append("| keyword | verdict | volume | difficulty | beatable | indies | min_rank | score | top_domains |")
+    lines.append("| keyword | verdict | volume | difficulty | beatable | indies | strongest_rank | score | top_domains |")
     lines.append("|---|---|---|---|---|---|---|---|---|")
     for s in ordered:
         lines.append(
             f"| {s.keyword} | **{s.verdict}** | {s.search_volume:,} | "
             f"{s.keyword_difficulty if s.keyword_difficulty is not None else '—'} | "
             f"{'yes' if s.beatable else 'no'} | {len(s.indie_domains)} | "
-            f"{s.min_rank_top10 if s.min_rank_top10 is not None else '—'} | {s.score} | "
+            f"{s.strongest_rank_top10 if s.strongest_rank_top10 is not None else '—'} | {s.score} | "
             f"{', '.join(s.top_domains[:5])} |"
         )
     lines.append("\n## Human review checklist (do before committing page list)")

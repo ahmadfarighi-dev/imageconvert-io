@@ -31,7 +31,7 @@ class ScoredKeyword:
     keyword_difficulty: int | None
     top_domains: list[str]
     indie_domains: list[str]
-    min_rank_top10: int | None
+    strongest_rank_top10: int | None  # highest KNOWN authority in the top 10 (toughest competitor)
     beatable: bool
     score: float
     verdict: str  # "build" | "maybe" | "skip"
