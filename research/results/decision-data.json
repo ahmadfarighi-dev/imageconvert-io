@@ -1,0 +1,3246 @@
+{
+  "gate": {
+    "passed": true,
+    "build_keyword_count": 46,
+    "total_build_volume": 680810,
+    "reasons": []
+  },
+  "keywords": [
+    {
+      "keyword": "heic to jpg",
+      "search_volume": 246000,
+      "keyword_difficulty": 41,
+      "top_domains": [
+        "heictojpg.com",
+        "www.freeconvert.com",
+        "cloudconvert.com",
+        "techcommunity.microsoft.com",
+        "discussions.apple.com",
+        "www.iloveimg.com",
+        "www.canva.com",
+        "www.adobe.com",
+        "www.youtube.com",
+        "www.reddit.com"
+      ],
+      "beatable": true,
+      "score": 3.181,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "heic to png",
+      "search_volume": 49500,
+      "keyword_difficulty": 9,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.canva.com",
+        "techcommunity.microsoft.com",
+        "www.freeconvert.com",
+        "www.adobe.com",
+        "tinywow.com",
+        "picflow.com",
+        "www.youtube.com",
+        "aftershoot.com",
+        "www.duplichecker.com"
+      ],
+      "beatable": true,
+      "score": 4.272,
+      "verdict": "build"
+    },
+    {
+      "keyword": "webp to png",
+      "search_volume": 165000,
+      "keyword_difficulty": 33,
+      "top_domains": [
+        "cloudconvert.com",
+        "ezgif.com",
+        "www.freeconvert.com",
+        "www.reddit.com",
+        "www.canva.com",
+        "cloudinary.com",
+        "www.shutterstock.com",
+        "techcommunity.microsoft.com",
+        "www.adobe.com"
+      ],
+      "beatable": true,
+      "score": 3.496,
+      "verdict": "build"
+    },
+    {
+      "keyword": "webp to jpg",
+      "search_volume": 110000,
+      "keyword_difficulty": 29,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "ezgif.com",
+        "www.iloveimg.com",
+        "tinywow.com",
+        "www.adobe.com",
+        "apps.microsoft.com",
+        "www.shutterstock.com",
+        "picflow.com",
+        "www.youtube.com"
+      ],
+      "beatable": true,
+      "score": 3.579,
+      "verdict": "build"
+    },
+    {
+      "keyword": "png to jpg",
+      "search_volume": 60500,
+      "keyword_difficulty": 30,
+      "top_domains": [
+        "png2jpg.com",
+        "www.freeconvert.com",
+        "www.adobe.com",
+        "www.canva.com",
+        "cloudconvert.com",
+        "www.iloveimg.com",
+        "tinywow.com",
+        "www.youtube.com",
+        "imageresizer.com",
+        "image.online-convert.com"
+      ],
+      "beatable": true,
+      "score": 3.347,
+      "verdict": "build"
+    },
+    {
+      "keyword": "jpg to png",
+      "search_volume": 33100,
+      "keyword_difficulty": 26,
+      "top_domains": [
+        "jpg2png.com",
+        "cloudconvert.com",
+        "www.adobe.com",
+        "www.canva.com",
+        "www.freeconvert.com",
+        "www.iloveimg.com",
+        "www.youtube.com",
+        "onlinepngtools.com",
+        "www.youtube.com",
+        "www.shutterstock.com"
+      ],
+      "beatable": true,
+      "score": 3.345,
+      "verdict": "build"
+    },
+    {
+      "keyword": "avif to jpg",
+      "search_volume": 33100,
+      "keyword_difficulty": 4,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "techcommunity.microsoft.com",
+        "cloudinary.com",
+        "www.jpgconverters.com",
+        "picflow.com",
+        "imagekit.io",
+        "ezgif.com",
+        "convertio.co",
+        "www.youtube.com"
+      ],
+      "beatable": true,
+      "score": 4.339,
+      "verdict": "build"
+    },
+    {
+      "keyword": "avif to png",
+      "search_volume": 27100,
+      "keyword_difficulty": 4,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "cloudinary.com",
+        "picflow.com",
+        "ezgif.com",
+        "convertio.co",
+        "askubuntu.com",
+        "imagekit.io",
+        "image.online-convert.com",
+        "www.youtube.com"
+      ],
+      "beatable": true,
+      "score": 4.256,
+      "verdict": "build"
+    },
+    {
+      "keyword": "png to webp",
+      "search_volume": 12100,
+      "keyword_difficulty": 29,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "picflow.com",
+        "cloudinary.com",
+        "pixelied.com",
+        "techcommunity.microsoft.com",
+        "elementor.com",
+        "imageresizer.com",
+        "convertio.co",
+        "www.youtube.com"
+      ],
+      "beatable": true,
+      "score": 2.899,
+      "verdict": "build"
+    },
+    {
+      "keyword": "jpg to webp",
+      "search_volume": 8100,
+      "keyword_difficulty": 33,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "towebp.io",
+        "picflow.com",
+        "pixelied.com",
+        "cloudinary.com",
+        "convertio.co",
+        "www.shutterstock.com",
+        "elementor.com",
+        "ezgif.com"
+      ],
+      "beatable": true,
+      "score": 2.619,
+      "verdict": "build"
+    },
+    {
+      "keyword": "svg to png",
+      "search_volume": 40500,
+      "keyword_difficulty": 8,
+      "top_domains": [
+        "svgtopng.com",
+        "cloudconvert.com",
+        "www.reddit.com",
+        "vexlio.com",
+        "www.freeconvert.com",
+        "www.canva.com",
+        "github.com",
+        "chromewebstore.google.com",
+        "techcommunity.microsoft.com"
+      ],
+      "beatable": true,
+      "score": 4.239,
+      "verdict": "build"
+    },
+    {
+      "keyword": "png to svg",
+      "search_volume": 49500,
+      "keyword_difficulty": 41,
+      "top_domains": [
+        "www.adobe.com",
+        "pngtosvg.com",
+        "convertio.co",
+        "picsvg.com",
+        "vectormagic.com",
+        "www.youtube.com",
+        "www.figma.com",
+        "www.reddit.com",
+        "www.freeconvert.com",
+        "www.youtube.com"
+      ],
+      "beatable": true,
+      "score": 2.77,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "bmp to jpg",
+      "search_volume": 880,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.945,
+      "verdict": "build"
+    },
+    {
+      "keyword": "tiff to jpg",
+      "search_volume": 5400,
+      "keyword_difficulty": 0,
+      "top_domains": [
+        "www.iloveimg.com",
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "techcommunity.microsoft.com",
+        "www.reddit.com",
+        "play.google.com",
+        "www.youtube.com",
+        "www.adobe.com",
+        "picflow.com",
+        "www.youtube.com"
+      ],
+      "beatable": true,
+      "score": 3.732,
+      "verdict": "build"
+    },
+    {
+      "keyword": "gif to png",
+      "search_volume": 8100,
+      "keyword_difficulty": 4,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "ezgif.com",
+        "www.canva.com",
+        "www.adobe.com",
+        "cloudinary.com",
+        "www.reddit.com",
+        "picflow.com",
+        "www.cleverpdf.com"
+      ],
+      "beatable": true,
+      "score": 3.752,
+      "verdict": "build"
+    },
+    {
+      "keyword": "image compressor",
+      "search_volume": 60500,
+      "keyword_difficulty": 74,
+      "top_domains": [
+        "imagecompressor.com",
+        "www.freeconvert.com",
+        "www.iloveimg.com",
+        "compressnow.com",
+        "tinyjpg.com",
+        "www.adobe.com",
+        "tinypng.com",
+        "image-compressor.github.io",
+        "play.google.com",
+        "imageresizer.com"
+      ],
+      "beatable": false,
+      "score": 1.243,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image",
+      "search_volume": 60500,
+      "keyword_difficulty": 86,
+      "top_domains": [
+        "www.iloveimg.com",
+        "compressnow.com",
+        "www.freeconvert.com",
+        "imagecompressor.com",
+        "www.adobe.com",
+        "tinyjpg.com",
+        "support.microsoft.com",
+        "play.google.com",
+        "tinypng.com",
+        "compressimage.com"
+      ],
+      "beatable": false,
+      "score": 0.669,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg",
+      "search_volume": 14800,
+      "keyword_difficulty": 49,
+      "top_domains": [
+        "compressjpeg.com",
+        "tinyjpg.com",
+        "www.adobe.com",
+        "www.iloveimg.com",
+        "www.freeconvert.com",
+        "compress-or-die.com",
+        "tinypng.com",
+        "www.youtube.com",
+        "imageresizer.com"
+      ],
+      "beatable": true,
+      "score": 2.127,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "compress png",
+      "search_volume": 22200,
+      "keyword_difficulty": 16,
+      "top_domains": [
+        "compresspng.com",
+        "www.adobe.com",
+        "www.freeconvert.com",
+        "cloudconvert.com",
+        "www.iloveimg.com",
+        "www.online-convert.com",
+        "www.compress2go.com",
+        "smallpdf.com",
+        "pngquant.org"
+      ],
+      "beatable": true,
+      "score": 3.651,
+      "verdict": "build"
+    },
+    {
+      "keyword": "resize image",
+      "search_volume": 60500,
+      "keyword_difficulty": 45,
+      "top_domains": [
+        "imageresizer.com",
+        "www.adobe.com",
+        "www.iloveimg.com",
+        "www.simpleimageresizer.com",
+        "resizeimage.io",
+        "www.canva.com",
+        "resizeimage.com",
+        "resizepic.com",
+        "picresize.com"
+      ],
+      "beatable": true,
+      "score": 2.63,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "image resizer",
+      "search_volume": 60500,
+      "keyword_difficulty": 60,
+      "top_domains": [
+        "imageresizer.com",
+        "www.adobe.com",
+        "www.simpleimageresizer.com",
+        "jam.dev",
+        "www.shutterstock.com",
+        "promo.com",
+        "www.iloveimg.com",
+        "play.google.com",
+        "www.canva.com"
+      ],
+      "beatable": false,
+      "score": 1.913,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "reduce image size",
+      "search_volume": 22200,
+      "keyword_difficulty": 73,
+      "top_domains": [
+        "www.reduceimages.com",
+        "www.adobe.com",
+        "www.simpleimageresizer.com",
+        "www.iloveimg.com",
+        "image.pi7.org",
+        "www.canva.com",
+        "imageresizer.com",
+        "tinyjpg.com",
+        "picsart.com",
+        "picresize.com"
+      ],
+      "beatable": false,
+      "score": 1.174,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "shrink image",
+      "search_volume": 5400,
+      "keyword_difficulty": 79,
+      "top_domains": [
+        "www.simpleimageresizer.com",
+        "www.adobe.com",
+        "www.iloveimg.com",
+        "www.reduceimages.com",
+        "imageresizer.com",
+        "www.canva.com",
+        "www.shrink.media",
+        "resizer.ai",
+        "picresize.com"
+      ],
+      "beatable": false,
+      "score": 0.784,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 20kb",
+      "search_volume": 90,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.959,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 50kb",
+      "search_volume": 140,
+      "keyword_difficulty": 3,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.085,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 100kb",
+      "search_volume": 210,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.324,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "compress image to 200kb",
+      "search_volume": 110,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.045,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image to 1920x1080",
+      "search_volume": 110,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.045,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg to 100kb",
+      "search_volume": 170,
+      "keyword_difficulty": 4,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.144,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "heic to jpg converter",
+      "search_volume": 27100,
+      "keyword_difficulty": 29,
+      "top_domains": [
+        "heictojpg.com",
+        "www.adobe.com",
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "www.iloveimg.com",
+        "techcommunity.microsoft.com",
+        "imazing.com",
+        "play.google.com",
+        "www.canva.com",
+        "discussions.apple.com"
+      ],
+      "beatable": true,
+      "score": 3.147,
+      "verdict": "build"
+    },
+    {
+      "keyword": "heic to jpg converter free",
+      "search_volume": 5400,
+      "keyword_difficulty": 48,
+      "top_domains": [
+        "heictojpg.com",
+        "www.adobe.com",
+        "www.freeconvert.com",
+        "imazing.com",
+        "www.canva.com",
+        "apps.microsoft.com",
+        "cloudconvert.com",
+        "www.iloveimg.com",
+        "play.google.com"
+      ],
+      "beatable": true,
+      "score": 1.941,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "heic to jpg free",
+      "search_volume": 1600,
+      "keyword_difficulty": 22,
+      "top_domains": [
+        "www.iloveimg.com",
+        "heictojpg.com",
+        "www.freeconvert.com",
+        "www.adobe.com",
+        "www.canva.com",
+        "imazing.com",
+        "apps.microsoft.com",
+        "picflow.com",
+        "www.youtube.com",
+        "play.google.com"
+      ],
+      "beatable": true,
+      "score": 2.499,
+      "verdict": "build"
+    },
+    {
+      "keyword": "heic to jpg on mac",
+      "search_volume": 320,
+      "keyword_difficulty": 17,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.08,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "heic to jpg on iphone",
+      "search_volume": 480,
+      "keyword_difficulty": 14,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.307,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "heic to jpg android",
+      "search_volume": 320,
+      "keyword_difficulty": 29,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.78,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "heic to jpg adobe",
+      "search_volume": 210,
+      "keyword_difficulty": 24,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.766,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "heic to jpg windows",
+      "search_volume": 170,
+      "keyword_difficulty": 21,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.764,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "heic to jpg conversion",
+      "search_volume": 390,
+      "keyword_difficulty": 69,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.804,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "heic to png converter",
+      "search_volume": 3600,
+      "keyword_difficulty": 0,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.canva.com",
+        "www.adobe.com",
+        "techcommunity.microsoft.com",
+        "www.freeconvert.com",
+        "narrative.so",
+        "picflow.com",
+        "tinywow.com",
+        "aftershoot.com",
+        "convertio.co"
+      ],
+      "beatable": true,
+      "score": 3.556,
+      "verdict": "build"
+    },
+    {
+      "keyword": "heic to png converter free",
+      "search_volume": 480,
+      "keyword_difficulty": 8,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.468,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "heic to png free",
+      "search_volume": 170,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.233,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "heic to png converter bulk",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "heic to png on mac",
+      "search_volume": 40,
+      "keyword_difficulty": 13,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.403,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "heic to png or jpg",
+      "search_volume": 20,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.529,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "heic to png adobe",
+      "search_volume": 40,
+      "keyword_difficulty": 7,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.5,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "heic to png conversion",
+      "search_volume": 40,
+      "keyword_difficulty": 20,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.29,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "heic to png on iphone",
+      "search_volume": 20,
+      "keyword_difficulty": 9,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.203,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to png converter",
+      "search_volume": 5400,
+      "keyword_difficulty": 39,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "ezgif.com",
+        "picflow.com",
+        "convertio.co",
+        "www.canva.com",
+        "www.adobe.com",
+        "onlinepngtools.com",
+        "cloudinary.com",
+        "pixlr.com"
+      ],
+      "beatable": true,
+      "score": 2.277,
+      "verdict": "build"
+    },
+    {
+      "keyword": "webp to png extension",
+      "search_volume": 260,
+      "keyword_difficulty": 37,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.522,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "webp to png converter free",
+      "search_volume": 170,
+      "keyword_difficulty": 37,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.407,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to png free",
+      "search_volume": 140,
+      "keyword_difficulty": 33,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.44,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to png transparent",
+      "search_volume": 90,
+      "keyword_difficulty": 33,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.313,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to png ezgif",
+      "search_volume": 90,
+      "keyword_difficulty": 42,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.136,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to png cloudconvert",
+      "search_volume": 70,
+      "keyword_difficulty": 40,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.111,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to png bulk",
+      "search_volume": 70,
+      "keyword_difficulty": 18,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.518,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to png reddit",
+      "search_volume": 40,
+      "keyword_difficulty": 6,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.516,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to jpg converter",
+      "search_volume": 6600,
+      "keyword_difficulty": 29,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.iloveimg.com",
+        "www.freeconvert.com",
+        "www.adobe.com",
+        "ezgif.com",
+        "apps.microsoft.com",
+        "www.reddit.com",
+        "www.canva.com",
+        "convertio.co",
+        "www.youtube.com"
+      ],
+      "beatable": true,
+      "score": 2.712,
+      "verdict": "build"
+    },
+    {
+      "keyword": "webp to jpg converter free",
+      "search_volume": 480,
+      "keyword_difficulty": 29,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.904,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "webp to jpg free",
+      "search_volume": 260,
+      "keyword_difficulty": 24,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.837,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "webp to jpg free online converter",
+      "search_volume": 10,
+      "keyword_difficulty": 31,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.719,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to jpg adobe",
+      "search_volume": 40,
+      "keyword_difficulty": 13,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.403,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to jpg bulk",
+      "search_volume": 90,
+      "keyword_difficulty": 22,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.528,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to jpg online",
+      "search_volume": 90,
+      "keyword_difficulty": 35,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.273,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to jpg extension",
+      "search_volume": 50,
+      "keyword_difficulty": 24,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.298,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "webp to jpg canva",
+      "search_volume": 50,
+      "keyword_difficulty": 24,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.298,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to jpg converter",
+      "search_volume": 8100,
+      "keyword_difficulty": 27,
+      "top_domains": [
+        "www.adobe.com",
+        "png2jpg.com",
+        "www.freeconvert.com",
+        "www.canva.com",
+        "www.iloveimg.com",
+        "cloudconvert.com",
+        "tinywow.com",
+        "www.youtube.com",
+        "picflow.com",
+        "imageresizer.com"
+      ],
+      "beatable": true,
+      "score": 2.853,
+      "verdict": "build"
+    },
+    {
+      "keyword": "png to jpg converter free",
+      "search_volume": 720,
+      "keyword_difficulty": 27,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.086,
+      "verdict": "build"
+    },
+    {
+      "keyword": "png to jpg free",
+      "search_volume": 480,
+      "keyword_difficulty": 27,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.958,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "png to jpg i love pdf",
+      "search_volume": 90,
+      "keyword_difficulty": 44,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.097,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to jpg on iphone",
+      "search_volume": 110,
+      "keyword_difficulty": 19,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.657,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to jpg converter free online",
+      "search_volume": 70,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.741,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to jpg mac",
+      "search_volume": 140,
+      "keyword_difficulty": 21,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.698,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to jpg adobe",
+      "search_volume": 110,
+      "keyword_difficulty": 31,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.411,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to jpg online",
+      "search_volume": 140,
+      "keyword_difficulty": 27,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.569,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to png converter",
+      "search_volume": 9900,
+      "keyword_difficulty": 28,
+      "top_domains": [
+        "cloudconvert.com",
+        "jpg2png.com",
+        "www.adobe.com",
+        "www.canva.com",
+        "www.freeconvert.com",
+        "www.iloveimg.com",
+        "www.shutterstock.com",
+        "online2pdf.com",
+        "www.youtube.com"
+      ],
+      "beatable": true,
+      "score": 2.877,
+      "verdict": "build"
+    },
+    {
+      "keyword": "jpg to png converter free",
+      "search_volume": 480,
+      "keyword_difficulty": 26,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.985,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "jpg to png free",
+      "search_volume": 260,
+      "keyword_difficulty": 28,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.74,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "jpg to png transparent background",
+      "search_volume": 390,
+      "keyword_difficulty": 15,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.203,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "jpg to png extension",
+      "search_volume": 30,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.597,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to png background remover",
+      "search_volume": 210,
+      "keyword_difficulty": 55,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.046,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "jpg to png ezgif",
+      "search_volume": 50,
+      "keyword_difficulty": 34,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.127,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to png ilovepdf",
+      "search_volume": 30,
+      "keyword_difficulty": 52,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.716,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to png no background",
+      "search_volume": 90,
+      "keyword_difficulty": 14,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.685,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to jpg converter",
+      "search_volume": 1600,
+      "keyword_difficulty": 11,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "cloudinary.com",
+        "www.jpgconverters.com",
+        "picflow.com",
+        "convertio.co",
+        "ezgif.com",
+        "www.duplichecker.com",
+        "imagekit.io",
+        "image.online-convert.com"
+      ],
+      "beatable": true,
+      "score": 2.852,
+      "verdict": "build"
+    },
+    {
+      "keyword": "avif to jpg converter free",
+      "search_volume": 170,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.233,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to jpg free",
+      "search_volume": 140,
+      "keyword_difficulty": 2,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.106,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to jpg adobe",
+      "search_volume": 30,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.597,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to jpg canva",
+      "search_volume": 20,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.529,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to jpg mac",
+      "search_volume": 10,
+      "keyword_difficulty": 13,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.906,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to jpg converter free online",
+      "search_volume": 40,
+      "keyword_difficulty": 4,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.548,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to jpg converter download",
+      "search_volume": 20,
+      "keyword_difficulty": 2,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.296,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to jpg bulk",
+      "search_volume": 20,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.529,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to png converter",
+      "search_volume": 1000,
+      "keyword_difficulty": 7,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.79,
+      "verdict": "build"
+    },
+    {
+      "keyword": "avif to png ezgif",
+      "search_volume": 40,
+      "keyword_difficulty": 5,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.532,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to png free",
+      "search_volume": 70,
+      "keyword_difficulty": 1,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.833,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to png converter free online",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to png converter free",
+      "search_volume": 20,
+      "keyword_difficulty": 1,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.309,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to png adobe",
+      "search_volume": 20,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.529,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to png canva",
+      "search_volume": 20,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.529,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to png transparent",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "avif to png online",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to webp converter",
+      "search_volume": 1300,
+      "keyword_difficulty": 29,
+      "top_domains": [
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "picflow.com",
+        "cloudinary.com",
+        "pixelied.com",
+        "www.inpixio.com",
+        "imageresizer.com",
+        "ezgif.com",
+        "towebp.io",
+        "pixlr.com"
+      ],
+      "beatable": true,
+      "score": 2.211,
+      "verdict": "build"
+    },
+    {
+      "keyword": "png to webp converter free",
+      "search_volume": 260,
+      "keyword_difficulty": 13,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.102,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "png to webp bulk",
+      "search_volume": 20,
+      "keyword_difficulty": 18,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.084,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to webp compressor",
+      "search_volume": 40,
+      "keyword_difficulty": 35,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.048,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to webp lossless",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to webp online",
+      "search_volume": 20,
+      "keyword_difficulty": 30,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.926,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to webp ezgif",
+      "search_volume": 20,
+      "keyword_difficulty": 37,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.833,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to webp reddit",
+      "search_volume": 10,
+      "keyword_difficulty": 6,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.979,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to webp converter free online",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to webp converter",
+      "search_volume": 1000,
+      "keyword_difficulty": 33,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.01,
+      "verdict": "build"
+    },
+    {
+      "keyword": "jpg to webp converter free",
+      "search_volume": 50,
+      "keyword_difficulty": 33,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.144,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to webp free",
+      "search_volume": 90,
+      "keyword_difficulty": 37,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.234,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to webp bulk",
+      "search_volume": 50,
+      "keyword_difficulty": 20,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.366,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to webp compressor",
+      "search_volume": 20,
+      "keyword_difficulty": 38,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.82,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to webp ezgif",
+      "search_volume": 10,
+      "keyword_difficulty": 37,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.656,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to webp online",
+      "search_volume": 10,
+      "keyword_difficulty": 62,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.396,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to webp bulk converter",
+      "search_volume": 10,
+      "keyword_difficulty": 26,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.771,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "jpg to webp converter online",
+      "search_volume": 10,
+      "keyword_difficulty": 32,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.708,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "svg to png converter",
+      "search_volume": 2900,
+      "keyword_difficulty": 9,
+      "top_domains": [
+        "svgtopng.com",
+        "cloudconvert.com",
+        "www.freeconvert.com",
+        "vexlio.com",
+        "www.canva.com",
+        "www.svgviewer.dev",
+        "ezgif.com",
+        "picflow.com"
+      ],
+      "beatable": true,
+      "score": 3.151,
+      "verdict": "build"
+    },
+    {
+      "keyword": "svg to png transparent",
+      "search_volume": 50,
+      "keyword_difficulty": 4,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.639,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "svg to png converter free",
+      "search_volume": 110,
+      "keyword_difficulty": 5,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.943,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "svg to png high resolution",
+      "search_volume": 210,
+      "keyword_difficulty": 7,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.162,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "svg to png online",
+      "search_volume": 170,
+      "keyword_difficulty": 15,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.898,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "svg to png free",
+      "search_volume": 70,
+      "keyword_difficulty": 12,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.629,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "svg to png transparent background",
+      "search_volume": 20,
+      "keyword_difficulty": 18,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.084,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "svg to png mac",
+      "search_volume": 90,
+      "keyword_difficulty": 2,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.92,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "svg to png high quality",
+      "search_volume": 140,
+      "keyword_difficulty": 7,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.999,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to svg converter",
+      "search_volume": 9900,
+      "keyword_difficulty": 32,
+      "top_domains": [
+        "www.adobe.com",
+        "convertio.co",
+        "pngtosvg.com",
+        "picsvg.com",
+        "www.youtube.com",
+        "www.reddit.com",
+        "www.figma.com",
+        "www.freeconvert.com",
+        "imageresizer.com",
+        "www.canva.com"
+      ],
+      "beatable": true,
+      "score": 2.717,
+      "verdict": "build"
+    },
+    {
+      "keyword": "png to svg converter free",
+      "search_volume": 1900,
+      "keyword_difficulty": 32,
+      "top_domains": [
+        "www.adobe.com",
+        "convertio.co",
+        "picsvg.com",
+        "pngtosvg.com",
+        "www.reddit.com",
+        "www.youtube.com",
+        "www.freeconvert.com",
+        "www.figma.com",
+        "imageresizer.com",
+        "www.canva.com"
+      ],
+      "beatable": true,
+      "score": 2.23,
+      "verdict": "build"
+    },
+    {
+      "keyword": "png to svg free",
+      "search_volume": 1000,
+      "keyword_difficulty": 32,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.04,
+      "verdict": "build"
+    },
+    {
+      "keyword": "png to svg converter online free",
+      "search_volume": 90,
+      "keyword_difficulty": 32,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.332,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to svg with color",
+      "search_volume": 210,
+      "keyword_difficulty": 17,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.929,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "png to svg file",
+      "search_volume": 140,
+      "keyword_difficulty": 51,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.053,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to svg adobe",
+      "search_volume": 140,
+      "keyword_difficulty": 17,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.784,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to svg ai",
+      "search_volume": 170,
+      "keyword_difficulty": 37,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.407,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "png to svg inkscape",
+      "search_volume": 70,
+      "keyword_difficulty": 1,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.833,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "bmp to jpg converter",
+      "search_volume": 140,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.149,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "bmp to jpg converter free",
+      "search_volume": 20,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.322,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "bmp to jpg i love pdf",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "bmp to jpg bulk converter",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "bmp to jpg high quality",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "bmp to jpg online",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "bmp to jpg converter online free",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "bmp to jpg converter online",
+      "search_volume": 10,
+      "keyword_difficulty": 8,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.958,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "bmp to jpg file",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "tiff to jpg converter",
+      "search_volume": 880,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.945,
+      "verdict": "build"
+    },
+    {
+      "keyword": "tiff to jpg converter free",
+      "search_volume": 50,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.708,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "tiff to jpg free",
+      "search_volume": 40,
+      "keyword_difficulty": 1,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.597,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "tiff to jpg conversion",
+      "search_volume": 880,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.945,
+      "verdict": "build"
+    },
+    {
+      "keyword": "tiff to jpg adobe",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "tiff to jpg high quality",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "tiff to jpg iphone",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "tiff to jpg converter online",
+      "search_volume": 20,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.322,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "tiff to jpg i love pdf",
+      "search_volume": 10,
+      "keyword_difficulty": 17,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.864,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "gif to png converter",
+      "search_volume": 720,
+      "keyword_difficulty": 3,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.772,
+      "verdict": "build"
+    },
+    {
+      "keyword": "gif to png sequence",
+      "search_volume": 320,
+      "keyword_difficulty": 5,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.381,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "gif to png frames",
+      "search_volume": 210,
+      "keyword_difficulty": 3,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.255,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "gif to png sequence converter",
+      "search_volume": 30,
+      "keyword_difficulty": 3,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.447,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "gif to png ezgif",
+      "search_volume": 30,
+      "keyword_difficulty": 52,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.716,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "gif to png image sequence",
+      "search_volume": 20,
+      "keyword_difficulty": 10,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.19,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "gif to png sprite sheet",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "gif to png images",
+      "search_volume": 10,
+      "keyword_difficulty": 4,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "gif to png frames converter",
+      "search_volume": 10,
+      "keyword_difficulty": 42,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.604,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image compressor free",
+      "search_volume": 5400,
+      "keyword_difficulty": 77,
+      "top_domains": [
+        "imagecompressor.com",
+        "www.iloveimg.com",
+        "www.freeconvert.com",
+        "www.adobe.com",
+        "tinypng.com",
+        "tinyjpg.com",
+        "compressnow.com",
+        "shortpixel.com",
+        "ai.nero.com",
+        "graygrids.com"
+      ],
+      "beatable": false,
+      "score": 0.858,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image compressor for discord",
+      "search_volume": 320,
+      "keyword_difficulty": 74,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.652,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image compressor online",
+      "search_volume": 4400,
+      "keyword_difficulty": 77,
+      "top_domains": [
+        "imagecompressor.com",
+        "www.iloveimg.com",
+        "www.freeconvert.com",
+        "compressnow.com",
+        "www.adobe.com",
+        "imageresizer.com",
+        "tinyjpg.com",
+        "tinypng.com",
+        "optimole.com",
+        "shortpixel.com"
+      ],
+      "beatable": false,
+      "score": 0.838,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image compressor online free",
+      "search_volume": 1300,
+      "keyword_difficulty": 77,
+      "top_domains": [
+        "imagecompressor.com",
+        "www.freeconvert.com",
+        "www.iloveimg.com",
+        "tinyjpg.com",
+        "tinypng.com",
+        "compressnow.com",
+        "shortpixel.com",
+        "www.reddit.com",
+        "www.adobe.com",
+        "squoosh.app"
+      ],
+      "beatable": false,
+      "score": 0.716,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image compressor to 2mb",
+      "search_volume": 110,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.045,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image compressor to 1mb",
+      "search_volume": 90,
+      "keyword_difficulty": 9,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.783,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image compressor png",
+      "search_volume": 480,
+      "keyword_difficulty": 39,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.636,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "image compressor meme",
+      "search_volume": 90,
+      "keyword_difficulty": 37,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.234,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image compressor to 200kb",
+      "search_volume": 70,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.851,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image size",
+      "search_volume": 3600,
+      "keyword_difficulty": 74,
+      "top_domains": [
+        "www.iloveimg.com",
+        "imagecompressor.com",
+        "compressnow.com",
+        "www.adobe.com",
+        "imageresizer.com",
+        "play.google.com",
+        "www.youtube.com",
+        "tinyjpg.com",
+        "support.microsoft.com",
+        "compressimage.com"
+      ],
+      "beatable": false,
+      "score": 0.925,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image free",
+      "search_volume": 5400,
+      "keyword_difficulty": 77,
+      "top_domains": [
+        "www.freeconvert.com",
+        "www.iloveimg.com",
+        "www.adobe.com",
+        "imagecompressor.com",
+        "compressnow.com",
+        "tinypng.com",
+        "compressimage.com",
+        "tinyjpg.com",
+        "shortpixel.com",
+        "ai.nero.com"
+      ],
+      "beatable": false,
+      "score": 0.858,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image online",
+      "search_volume": 4400,
+      "keyword_difficulty": 77,
+      "top_domains": [
+        "www.iloveimg.com",
+        "imagecompressor.com",
+        "compressnow.com",
+        "www.adobe.com",
+        "tinyjpg.com",
+        "tinypng.com",
+        "www.youtube.com",
+        "www.freeconvert.com",
+        "imageresizer.com",
+        "compressimage.com"
+      ],
+      "beatable": false,
+      "score": 0.838,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image file",
+      "search_volume": 880,
+      "keyword_difficulty": 77,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.677,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 2mb",
+      "search_volume": 320,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.507,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "compress image online free",
+      "search_volume": 1300,
+      "keyword_difficulty": 74,
+      "top_domains": [
+        "imagecompressor.com",
+        "www.iloveimg.com",
+        "tinypng.com",
+        "www.freeconvert.com",
+        "www.adobe.com",
+        "tinyjpg.com",
+        "compressnow.com",
+        "graygrids.com",
+        "imageresizer.com",
+        "shortpixel.com"
+      ],
+      "beatable": false,
+      "score": 0.81,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 1mb",
+      "search_volume": 260,
+      "keyword_difficulty": 9,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.199,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "compress image without losing quality",
+      "search_volume": 390,
+      "keyword_difficulty": 64,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.933,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image file size",
+      "search_volume": 1600,
+      "keyword_difficulty": 74,
+      "top_domains": [
+        "imagecompressor.com",
+        "www.freeconvert.com",
+        "www.iloveimg.com",
+        "compressnow.com",
+        "support.microsoft.com",
+        "www.adobe.com",
+        "tinyjpg.com",
+        "tinypng.com",
+        "www.youtube.com"
+      ],
+      "beatable": false,
+      "score": 0.833,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg for free",
+      "search_volume": 880,
+      "keyword_difficulty": 44,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.649,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "compress jpeg file",
+      "search_volume": 480,
+      "keyword_difficulty": 60,
+      "top_domains": [],
+      "beatable": false,
+      "score": 1.073,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg image",
+      "search_volume": 110,
+      "keyword_difficulty": 65,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.716,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg free online",
+      "search_volume": 210,
+      "keyword_difficulty": 47,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.232,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "compress jpeg size",
+      "search_volume": 320,
+      "keyword_difficulty": 46,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.354,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "compress jpeg to 200kb",
+      "search_volume": 70,
+      "keyword_difficulty": 9,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.685,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg on mac",
+      "search_volume": 50,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.708,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg online",
+      "search_volume": 320,
+      "keyword_difficulty": 35,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.629,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "compress png file",
+      "search_volume": 1000,
+      "keyword_difficulty": 19,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.43,
+      "verdict": "build"
+    },
+    {
+      "keyword": "compress png free",
+      "search_volume": 320,
+      "keyword_difficulty": 35,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.629,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "compress png image",
+      "search_volume": 480,
+      "keyword_difficulty": 31,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.851,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "compress png online",
+      "search_volume": 720,
+      "keyword_difficulty": 32,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.943,
+      "verdict": "build"
+    },
+    {
+      "keyword": "compress png size",
+      "search_volume": 90,
+      "keyword_difficulty": 23,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.508,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress png to 2mb",
+      "search_volume": 140,
+      "keyword_difficulty": 9,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.956,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress png to 1mb",
+      "search_volume": 90,
+      "keyword_difficulty": 6,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.841,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress png file size",
+      "search_volume": 1900,
+      "keyword_difficulty": 39,
+      "top_domains": [
+        "compresspng.com",
+        "www.adobe.com",
+        "www.freeconvert.com",
+        "www.reddit.com",
+        "cloudconvert.com",
+        "www.adobe.com",
+        "www.iloveimg.com",
+        "www.online-convert.com",
+        "smallpdf.com",
+        "www.compress2go.com"
+      ],
+      "beatable": true,
+      "score": 2.0,
+      "verdict": "build"
+    },
+    {
+      "keyword": "compress png without losing quality",
+      "search_volume": 70,
+      "keyword_difficulty": 11,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.648,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image online",
+      "search_volume": 14800,
+      "keyword_difficulty": 79,
+      "top_domains": [
+        "imageresizer.com",
+        "www.adobe.com",
+        "www.iloveimg.com",
+        "www.simpleimageresizer.com",
+        "www.canva.com",
+        "picresize.com",
+        "resizeimage.com",
+        "resizepic.com",
+        "resizer.ai",
+        "picsart.com"
+      ],
+      "beatable": false,
+      "score": 0.876,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image online free",
+      "search_volume": 6600,
+      "keyword_difficulty": 79,
+      "top_domains": [
+        "www.adobe.com",
+        "imageresizer.com",
+        "www.simpleimageresizer.com",
+        "picresize.com",
+        "resizeimage.com",
+        "www.canva.com",
+        "www.iloveimg.com",
+        "bulkresizephotos.com",
+        "resizer.ai",
+        "resizeimage.io"
+      ],
+      "beatable": false,
+      "score": 0.802,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image free",
+      "search_volume": 1600,
+      "keyword_difficulty": 79,
+      "top_domains": [
+        "www.adobe.com",
+        "imageresizer.com",
+        "www.simpleimageresizer.com",
+        "resizeimage.com",
+        "www.canva.com",
+        "resizeimage.io",
+        "www.iloveimg.com",
+        "jam.dev",
+        "picresize.com",
+        "bulkresizephotos.com"
+      ],
+      "beatable": false,
+      "score": 0.673,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image for instagram",
+      "search_volume": 2900,
+      "keyword_difficulty": 29,
+      "top_domains": [
+        "www.simpleimageresizer.com",
+        "www.adobe.com",
+        "www.canva.com",
+        "www.reddit.com",
+        "instasize.com",
+        "www.youtube.com",
+        "www.pixextender.com",
+        "picsart.com",
+        "www.instagram.com"
+      ],
+      "beatable": true,
+      "score": 2.458,
+      "verdict": "build"
+    },
+    {
+      "keyword": "resize image canva",
+      "search_volume": 320,
+      "keyword_difficulty": 12,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.206,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "resize image without losing quality",
+      "search_volume": 1300,
+      "keyword_difficulty": 33,
+      "top_domains": [
+        "www.simpleimageresizer.com",
+        "www.adobe.com",
+        "www.reddit.com",
+        "retoucher.online",
+        "www.canva.com",
+        "www.facebook.com",
+        "imageresizer.com"
+      ],
+      "beatable": true,
+      "score": 2.087,
+      "verdict": "build"
+    },
+    {
+      "keyword": "resize image gimp",
+      "search_volume": 1600,
+      "keyword_difficulty": 3,
+      "top_domains": [
+        "www.reddit.com",
+        "www.gimp.org",
+        "guides.lib.umich.edu",
+        "www.youtube.com",
+        "docs.gimp.org",
+        "superuser.com",
+        "www.youtube.com",
+        "www.tomshardware.com"
+      ],
+      "beatable": true,
+      "score": 3.108,
+      "verdict": "build"
+    },
+    {
+      "keyword": "resize image iphone",
+      "search_volume": 590,
+      "keyword_difficulty": 2,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.716,
+      "verdict": "build"
+    },
+    {
+      "keyword": "resize image photoshop",
+      "search_volume": 1600,
+      "keyword_difficulty": 13,
+      "top_domains": [
+        "www.adobe.com",
+        "www.reddit.com",
+        "www.youtube.com",
+        "www.slrlounge.com",
+        "www.youtube.com",
+        "helpx.adobe.com",
+        "www.pugetsound.edu",
+        "bringyourownlaptop.com"
+      ],
+      "beatable": true,
+      "score": 2.788,
+      "verdict": "build"
+    },
+    {
+      "keyword": "image resizer free",
+      "search_volume": 1600,
+      "keyword_difficulty": 79,
+      "top_domains": [
+        "www.adobe.com",
+        "imageresizer.com",
+        "www.simpleimageresizer.com",
+        "bulkresizephotos.com",
+        "resizer.ai",
+        "jam.dev",
+        "resizeimage.io",
+        "www.canva.com",
+        "www.iloveimg.com"
+      ],
+      "beatable": false,
+      "score": 0.673,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image resizer online",
+      "search_volume": 14800,
+      "keyword_difficulty": 76,
+      "top_domains": [
+        "imageresizer.com",
+        "www.adobe.com",
+        "www.iloveimg.com",
+        "www.simpleimageresizer.com",
+        "www.canva.com",
+        "picresize.com",
+        "resizer.ai",
+        "resizepic.com",
+        "www.img2go.com",
+        "www.reduceimages.com"
+      ],
+      "beatable": false,
+      "score": 1.001,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image resizer free online",
+      "search_volume": 6600,
+      "keyword_difficulty": 76,
+      "top_domains": [
+        "www.adobe.com",
+        "imageresizer.com",
+        "www.simpleimageresizer.com",
+        "picresize.com",
+        "www.iloveimg.com",
+        "www.canva.com",
+        "bulkresizephotos.com",
+        "jam.dev",
+        "resizer.ai",
+        "resizeimage.io"
+      ],
+      "beatable": false,
+      "score": 0.917,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image resizer pixels",
+      "search_volume": 1600,
+      "keyword_difficulty": 47,
+      "top_domains": [
+        "www.resizepixel.com",
+        "image.pi7.org",
+        "www.adobe.com",
+        "www.simpleimageresizer.com",
+        "www.canva.com",
+        "www.iloveimg.com",
+        "resizepic.com",
+        "www.fotor.com",
+        "watermarkly.com"
+      ],
+      "beatable": true,
+      "score": 1.698,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "image resizer for instagram",
+      "search_volume": 2900,
+      "keyword_difficulty": 33,
+      "top_domains": [
+        "www.simpleimageresizer.com",
+        "www.canva.com",
+        "www.reddit.com",
+        "www.adobe.com",
+        "www.pixextender.com",
+        "biteable.com",
+        "www.simpleimageresizer.com",
+        "picsart.com",
+        "pixoate.com",
+        "instasize.com"
+      ],
+      "beatable": true,
+      "score": 2.32,
+      "verdict": "build"
+    },
+    {
+      "keyword": "image resizer ezgif",
+      "search_volume": 140,
+      "keyword_difficulty": 33,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.44,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image resizer png",
+      "search_volume": 720,
+      "keyword_difficulty": 30,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.001,
+      "verdict": "build"
+    },
+    {
+      "keyword": "image resizer compressor",
+      "search_volume": 390,
+      "keyword_difficulty": 74,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.674,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "image resizer without losing quality",
+      "search_volume": 1300,
+      "keyword_difficulty": 36,
+      "top_domains": [
+        "www.simpleimageresizer.com",
+        "www.adobe.com",
+        "www.reddit.com",
+        "retoucher.online",
+        "www.canva.com",
+        "www.youtube.com",
+        "resizer.ai",
+        "picsart.com",
+        "www.fotor.com"
+      ],
+      "beatable": true,
+      "score": 1.993,
+      "verdict": "build"
+    },
+    {
+      "keyword": "reduce image size in kb",
+      "search_volume": 1300,
+      "keyword_difficulty": 36,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.993,
+      "verdict": "build"
+    },
+    {
+      "keyword": "reduce image size iphone",
+      "search_volume": 320,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.507,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "reduce image size free",
+      "search_volume": 880,
+      "keyword_difficulty": 87,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.383,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "reduce image size online",
+      "search_volume": 1000,
+      "keyword_difficulty": 79,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.63,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "reduce image size in mb",
+      "search_volume": 260,
+      "keyword_difficulty": 20,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.933,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "reduce image size online free",
+      "search_volume": 260,
+      "keyword_difficulty": 87,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.314,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "reduce image size without losing quality",
+      "search_volume": 320,
+      "keyword_difficulty": 34,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.654,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "reduce image size mac",
+      "search_volume": 320,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.507,
+      "verdict": "maybe"
+    },
+    {
+      "keyword": "reduce image size android",
+      "search_volume": 170,
+      "keyword_difficulty": 12,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.965,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "shrink image size",
+      "search_volume": 2400,
+      "keyword_difficulty": 79,
+      "top_domains": [
+        "www.simpleimageresizer.com",
+        "www.adobe.com",
+        "www.reduceimages.com",
+        "www.canva.com",
+        "www.iloveimg.com",
+        "www.shrink.media",
+        "www.youtube.com",
+        "www.img2go.com",
+        "resizer.ai"
+      ],
+      "beatable": false,
+      "score": 0.71,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "shrink image file size",
+      "search_volume": 1600,
+      "keyword_difficulty": 56,
+      "top_domains": [
+        "www.compress2go.com",
+        "www.img2go.com",
+        "tinypng.com",
+        "support.microsoft.com",
+        "www.reddit.com",
+        "tinyjpg.com",
+        "www.shrink.media",
+        "www.iloveimg.com",
+        "www.freeconvert.com",
+        "www.adobe.com"
+      ],
+      "beatable": false,
+      "score": 1.41,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "shrink image online",
+      "search_volume": 14800,
+      "keyword_difficulty": 87,
+      "top_domains": [
+        "www.simpleimageresizer.com",
+        "www.adobe.com",
+        "imageresizer.com",
+        "www.iloveimg.com",
+        "picresize.com",
+        "www.reduceimages.com",
+        "www.canva.com",
+        "resizer.ai",
+        "picsart.com",
+        "www.shrink.media"
+      ],
+      "beatable": false,
+      "score": 0.542,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "shrink image without losing quality",
+      "search_volume": 1300,
+      "keyword_difficulty": 24,
+      "top_domains": [],
+      "beatable": true,
+      "score": 2.367,
+      "verdict": "build"
+    },
+    {
+      "keyword": "shrink image size free",
+      "search_volume": 40,
+      "keyword_difficulty": 79,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.339,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "shrink image size iphone",
+      "search_volume": 30,
+      "keyword_difficulty": 14,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.283,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "shrink image to 2mb",
+      "search_volume": 30,
+      "keyword_difficulty": 0,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.491,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "shrink image file size free",
+      "search_volume": 20,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.529,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "shrink image free",
+      "search_volume": 20,
+      "keyword_difficulty": 79,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.278,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 20kb online",
+      "search_volume": 30,
+      "keyword_difficulty": 60,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.597,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 20kb jpg",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 20kb free",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 20kb i love pdf",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 20kb to 50kb",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 20kb without losing quality",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 20kb with height and width",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 20kb to 50kb online",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 20kb online jpg",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 50kb online",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 50kb jpg",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 50kb jpg format",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 50kb free",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 50kb pdf",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 50kb pi7 image compressor",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 50kb free online",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 50kb to 100kb",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 50kb i love pdf",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 100kb online",
+      "search_volume": 10,
+      "keyword_difficulty": 3,
+      "top_domains": [],
+      "beatable": true,
+      "score": 1.01,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 100kb free",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 100kb jpg",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 100kb pdf",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 100kb online free",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 100kb to 200kb",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 100kb jpg format",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 100kb without losing quality",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 100kb online jpg",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 200kb jpg",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 200kb pdf",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 200kb free",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 200kb free online",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 200kb without losing quality",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 200kb online",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 200kb i love pdf",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 200kb jpeg",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress image to 200kb png",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image to 1920x1080 pixels",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image to 1920x1080 online",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image to 1920x1080 free",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image to 1920x1080 photoshop",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image to 1920x1080 landscape",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image to 1920x1080 online free",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image to 1920x1080 ai",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image to 1920x1080 without losing quality",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "resize image to 1920x1080 without stretching",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg to 100kb free",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg to 100kb online free",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg to 100kb i love pdf",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg to 100kb pdf",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg to 100kb online",
+      "search_volume": 10,
+      "keyword_difficulty": 48,
+      "top_domains": [],
+      "beatable": true,
+      "score": 0.542,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg to 100kb jpg",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg to 100kb 11zon",
+      "search_volume": 0,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.0,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg to 100kb online free jpg",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    },
+    {
+      "keyword": "compress jpeg to 100kb i love jpg",
+      "search_volume": 10,
+      "keyword_difficulty": null,
+      "top_domains": [],
+      "beatable": false,
+      "score": 0.417,
+      "verdict": "skip"
+    }
+  ]
+}
