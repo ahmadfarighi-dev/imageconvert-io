@@ -23,7 +23,7 @@ def cache_key(endpoint: str, payload) -> str:
 
 class DataForSeoClient:
     def __init__(self, login: str | None = None, password: str | None = None):
-        load_dotenv()
+        load_dotenv(dotenv_path=Path(__file__).resolve().parent / ".env")
         self.login = login or os.environ["DATAFORSEO_LOGIN"]
         self.password = password or os.environ["DATAFORSEO_PASSWORD"]
         self.headers = {
