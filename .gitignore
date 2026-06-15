@@ -51,3 +51,8 @@ next-env.d.ts
 # OS / editor
 .idea/
 .vscode/
+
+# Research pipeline
+/research/cache/
+/research/.venv/
+research/.env
