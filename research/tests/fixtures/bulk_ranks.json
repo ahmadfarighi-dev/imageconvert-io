@@ -1,0 +1,16 @@
+{
+  "status_code": 20000,
+  "tasks": [
+    {
+      "result": [
+        {
+          "items": [
+            {"type": "ranks", "target": "cloudconvert.com", "rank": 71},
+            {"type": "ranks", "target": "freeconvert.com", "rank": 33},
+            {"type": "ranks", "target": "tinywow.com", "rank": 38}
+          ]
+        }
+      ]
+    }
+  ]
+}

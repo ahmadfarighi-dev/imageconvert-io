@@ -1,0 +1,18 @@
+{
+  "status_code": 20000,
+  "tasks": [
+    {
+      "result": [
+        {
+          "keyword": "heic to jpg",
+          "items": [
+            {"type": "organic", "rank_group": 1, "domain": "cloudconvert.com", "url": "https://cloudconvert.com/heic-to-jpg"},
+            {"type": "people_also_ask", "rank_group": 2},
+            {"type": "organic", "rank_group": 2, "domain": "freeconvert.com", "url": "https://freeconvert.com/heic-to-jpg"},
+            {"type": "organic", "rank_group": 3, "domain": "tinywow.com", "url": "https://tinywow.com/x"}
+          ]
+        }
+      ]
+    }
+  ]
+}

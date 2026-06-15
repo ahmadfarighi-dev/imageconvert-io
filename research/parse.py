@@ -30,3 +30,29 @@ def parse_keyword_difficulty(body: dict) -> dict[str, int]:
             if kw and item.get("keyword_difficulty") is not None:
                 out[kw] = item["keyword_difficulty"]
     return out
+
+
+def parse_serp(body: dict) -> SerpResult:
+    results = _results(body)
+    if not results:
+        return SerpResult(keyword="", organic=[])
+    res = results[0]
+    organic = []
+    for item in res.get("items") or []:
+        if item.get("type") == "organic" and item.get("domain"):
+            organic.append(OrganicResult(
+                rank=item.get("rank_group", 0),
+                domain=item["domain"].lower(),
+                url=item.get("url", ""),
+            ))
+    return SerpResult(keyword=res.get("keyword", "").lower().strip(), organic=organic)
+
+
+def parse_bulk_ranks(body: dict) -> dict[str, int]:
+    out: dict[str, int] = {}
+    for res in _results(body):
+        for item in res.get("items") or []:
+            target = (item.get("target") or "").lower()
+            if target and item.get("rank") is not None:
+                out[target] = item["rank"]
+    return out
