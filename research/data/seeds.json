@@ -1,0 +1,15 @@
+{
+  "format_pairs": [
+    "heic to jpg", "heic to png", "webp to png", "webp to jpg", "png to jpg",
+    "jpg to png", "avif to jpg", "avif to png", "png to webp", "jpg to webp",
+    "svg to png", "png to svg", "bmp to jpg", "tiff to jpg", "gif to png"
+  ],
+  "function": [
+    "image compressor", "compress image", "compress jpeg", "compress png",
+    "resize image", "image resizer", "reduce image size", "shrink image"
+  ],
+  "spec": [
+    "compress image to 20kb", "compress image to 50kb", "compress image to 100kb",
+    "compress image to 200kb", "resize image to 1920x1080", "compress jpeg to 100kb"
+  ]
+}
