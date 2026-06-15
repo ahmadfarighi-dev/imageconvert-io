@@ -1313,3 +1313,24 @@ Report to the user: the gate PASS/FAIL, the count of `build` keywords and combin
 - **Care features baked in:** unknown-authority-domains-are-not-indie default (test in Task 7), probe-before-spend (Task 10 §3), cache-to-avoid-re-pay (Task 4), score-is-a-sort-key-not-a-verdict (everywhere), human-review checklist in the output (Task 8), no verdict from free data (architecture).
 - **Known residual risk:** DataForSEO response nesting is verified from docs, not a live call — Task 10 §3 (`probe`) is the mandatory reality-check before bulk spend. This is the single most likely place reality diverges from the plan; it is explicitly gated.
 ```
+
+---
+
+## Execution outcome (2026-06-15) — Tasks 0–9 DONE; Task 10 (live run) PENDING DataForSEO key
+
+Built via subagent-driven development. **34 unit tests pass** (seeds 2, discover 3, client 2, parse_metrics 3, parse_serp 4, score 14, report 3, run_helpers 3). Code-complete and hardened; the only remaining step is the live paid run, deliberately held until the user provides DataForSEO API credentials in `research/.env`.
+
+**Two review rounds materially changed the code (the "be careful" payoff):**
+
+*Decision-core adversarial review (score.py)* found three flaws that all biased toward the expensive false-positive ("build a page that can't rank"):
+- `rank == 0` ("no backlinks detected"/unknown to DataForSEO) was counted as a beatable indie → missing authority data manufactured "build" verdicts. Now excluded via `INDIE_RANK_MIN`.
+- Beatability was position-blind (8 giants + 2 indies in slots 9–10 → "build"). Now only the **top-5 positions** count (`TOP_POSITIONS`).
+- `difficulty == None` silently became "build"; now conservatively "maybe".
+- Replaced misleading `min_rank_top10` (weakest competitor, structurally ~0) with `strongest_rank_top10` (toughest competitor). Added 5 tests.
+
+*Pipeline final review* found and fixed:
+- `parse_serp` now sorts organic by rank (beatability was evaluating list-order, not rank-order).
+- `client` cache dir + `run.py` file paths anchored to the `research/` dir (CWD-relative cache could leak paid responses into an un-gitignored `cache/`).
+- `probe` truncation 400→2500 so real field names are visible before spend; loud WARNINGs when a parser yields nothing from a non-empty response or a SERP is empty/mismatched (silent shape-mismatch was the top residual risk).
+
+**To run Task 10 when the key is ready:** `cd research && . .venv/Scripts/activate`, create `research/.env` from `.env.example`, then `python run.py discover` → `python run.py probe` (compare output to fixtures!) → `python run.py pull --max-serps 250` → `python run.py report`. Then walk the human-review checklist in the generated `keyword-research.md` before locking Plan 2's page list.
