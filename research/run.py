@@ -116,11 +116,11 @@ def cmd_report(args):
     metrics = [KeywordMetrics(**m) for m in data["metrics"]]
     serp_domains = data["serp_domains"]
 
+    # Score every keyword on volume + KD (both available for all candidates). SERP domains are a
+    # human-review aid, attached where we pulled them (highest-volume subset); empty otherwise.
     scored = []
     for m in metrics:
-        domains = serp_domains.get(m.keyword)
-        if not domains:
-            continue
+        domains = serp_domains.get(m.keyword, [])
         serp = SerpResult(m.keyword, [OrganicResult(i + 1, d, "") for i, d in enumerate(domains)])
         scored.append(score_mod.score_keyword(m, serp))
 
