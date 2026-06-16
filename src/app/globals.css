@@ -2,26 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --font-jakarta: '';
   }
+
+  body {
+    background-color: #FFFDF7;
+    color: #1C2B2D;
+  }
+
+  /* Remove default dark-mode flip — the site is light-only for now */
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .ic-badge {
+    @apply inline-flex items-center gap-1.5 bg-ic-teal-50 border border-ic-teal-100
+           rounded-full px-3 py-1 text-xs font-semibold text-ic-teal-700;
+  }
+  .ic-btn-primary {
+    @apply inline-flex items-center gap-2 bg-ic-teal-600 text-white font-bold
+           rounded-ic-md px-5 py-2.5 text-sm shadow-ic-teal
+           hover:bg-ic-teal-700 active:scale-95 transition-all duration-150
+           cursor-pointer border-0;
+  }
+  .ic-btn-secondary {
+    @apply inline-flex items-center gap-2 bg-white text-ic-text-600 font-semibold
+           rounded-ic-md px-4 py-2.5 text-sm border border-ic-cream-b shadow-ic-sm
+           hover:border-ic-teal-300 transition-all duration-150 cursor-pointer;
+  }
+  .ic-card {
+    @apply bg-white border border-ic-cream-b rounded-ic-md shadow-ic-sm;
+  }
+  .ic-section-label {
+    @apply text-[10px] font-bold tracking-widest text-ic-teal-600 uppercase mb-1.5;
   }
 }
