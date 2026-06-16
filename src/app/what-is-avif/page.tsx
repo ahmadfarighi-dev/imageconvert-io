@@ -60,6 +60,34 @@ export default function WhatIsAvif() {
             directly affects Core Web Vitals and bandwidth costs, AVIF is the best choice
             available in 2026.
           </p>
+          <p className="text-[14px] text-ic-text-600 leading-relaxed mb-4">
+            AVIF is the image format built on top of AV1, a royalty-free video codec developed by
+            the Alliance for Open Media (AOMedia) — a consortium that includes Google, Mozilla,
+            Netflix, Microsoft, Amazon, Intel, and Apple, among others. Because AV1 was designed
+            from the ground up to compete with proprietary codecs like HEVC without licensing fees,
+            AVIF inherited a genuinely modern compression toolkit: larger prediction blocks, better
+            motion/spatial prediction even for still frames, and more flexible quantization than
+            either JPG or WebP. This lineage is also why AVIF support spread quickly across
+            browsers — the same vendors building AV1 video decoders had a direct incentive to ship
+            AVIF image support alongside it.
+          </p>
+          <p className="text-[14px] text-ic-text-600 leading-relaxed mb-4">
+            In practical terms, the compression gains show up most in image-heavy contexts. An
+            e-commerce site with a product gallery of 20 photos per listing can cut total page
+            weight dramatically by switching from JPG to AVIF — shaving even 200–300 KB per page
+            load adds up across thousands of monthly visitors and has a measurable effect on
+            mobile load times, bounce rate, and ultimately conversion rate. Editorial and
+            photography sites see similar wins on hero images and galleries, where dozens of
+            large photos are loaded on a single scroll.
+          </p>
+          <p className="text-[14px] text-ic-text-600 leading-relaxed mb-4">
+            AVIF also supports features JPG simply can&apos;t: animated AVIF sequences (a
+            higher-quality, smaller-file alternative to animated GIF or even some video use cases),
+            HDR and wide color gamut support for displays capable of richer color, and lossless
+            compression mode in addition to lossy. JPG is limited to 8-bit standard color and has
+            no native animation or transparency support at all, which makes AVIF considerably more
+            versatile for modern use cases beyond simple photographs.
+          </p>
 
           <h2 className="text-[20px] font-extrabold text-ic-text-900 tracking-tight mt-8 mb-3">
             Browser support in 2026
@@ -71,6 +99,18 @@ export default function WhatIsAvif() {
             <code className="text-[13px] bg-ic-cream-b px-1 py-0.5 rounded">&lt;picture&gt;</code>{" "}
             element. If you&apos;re converting AVIF files for use outside a browser — in an app,
             email, or document — JPG or PNG remain safer choices.
+          </p>
+          <p className="text-[14px] text-ic-text-600 leading-relaxed mb-4">
+            The standard fallback pattern looks like a{" "}
+            <code className="text-[13px] bg-ic-cream-b px-1 py-0.5 rounded">&lt;picture&gt;</code>{" "}
+            element with multiple{" "}
+            <code className="text-[13px] bg-ic-cream-b px-1 py-0.5 rounded">&lt;source&gt;</code>{" "}
+            tags: an AVIF source first, a WebP source second, and a plain{" "}
+            <code className="text-[13px] bg-ic-cream-b px-1 py-0.5 rounded">&lt;img&gt;</code>{" "}
+            tag with a JPG as the final fallback. The browser automatically picks the first format
+            it can decode, so modern browsers get the smallest file and older or unusual browsers
+            still get a working image. This layered approach is why AVIF adoption on the web has
+            been low-risk — sites don&apos;t need to wait for 100% support before using it.
           </p>
 
           <h2 className="text-[20px] font-extrabold text-ic-text-900 tracking-tight mt-8 mb-3">
@@ -89,6 +129,18 @@ export default function WhatIsAvif() {
             <strong>Use JPG</strong> for maximum compatibility — every device, every app, every
             browser since the 1990s.
           </p>
+          <p className="text-[14px] text-ic-text-600 leading-relaxed mb-4">
+            File naming and MIME types are worth getting right when working with AVIF directly.
+            Files use the{" "}
+            <code className="text-[13px] bg-ic-cream-b px-1 py-0.5 rounded">.avif</code> extension,
+            and the format is served with the MIME type{" "}
+            <code className="text-[13px] bg-ic-cream-b px-1 py-0.5 rounded">image/avif</code>. If
+            you&apos;re self-hosting AVIF files, make sure your web server or CDN sends this MIME
+            type in the Content-Type header — some older server configs don&apos;t recognize the
+            extension by default and will serve it as{" "}
+            <code className="text-[13px] bg-ic-cream-b px-1 py-0.5 rounded">application/octet-stream</code>,
+            which can cause browsers to download the file instead of rendering it inline.
+          </p>
 
           <h2 className="text-[20px] font-extrabold text-ic-text-900 tracking-tight mt-8 mb-3">
             Encoding speed trade-off
@@ -98,6 +150,17 @@ export default function WhatIsAvif() {
             performs more sophisticated analysis. Our converter uses a WASM build of the AV1
             encoder running in your browser — expect a few seconds per image rather than
             milliseconds. This is normal and inherent to the codec, not a limitation of the tool.
+          </p>
+          <p className="text-[14px] text-ic-text-600 leading-relaxed mb-4">
+            This asymmetry — slow to encode, fast and cheap to decode — is actually by design.
+            AV1 (and therefore AVIF) was built with video streaming in mind, where an encoder runs
+            once on powerful server hardware but the resulting file gets decoded millions of times
+            on phones, laptops, and TVs. For a one-off conversion of a handful of personal photos,
+            the extra second or two per image is a non-issue. For a developer trying to convert
+            thousands of source images for a website at build time, encoding speed is worth
+            planning around — batching, caching previously converted assets, and only re-encoding
+            images that have actually changed will save significant time compared to converting
+            an entire image library from scratch on every deploy.
           </p>
         </div>
 
