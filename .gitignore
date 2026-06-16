@@ -58,3 +58,6 @@ next-env.d.ts
 research/.env
 /research/results/pull.json
 /research/results/pull.log
+
+# Brainstorm visual companion
+.superpowers/
